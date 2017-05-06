@@ -61,6 +61,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-14940562457315" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/05/06/14940562457315/" class="article-date">
+  <time datetime="2017-05-06T07:37:25.000Z" itemprop="datePublished">2017-05-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="python基本代码"><a href="#python基本代码" class="headerlink" title="python基本代码"></a>python基本代码</h1><h2 id="字符编码"><a href="#字符编码" class="headerlink" title="字符编码"></a>字符编码</h2><p>在2中是ascii码在最新的Python3版本中，字符串是以Unicode编码的，也就是说，Python的字符串支持多语言，ord()函数获取字符的整数表示，chr()函数把编码转换为对应的字符,str()方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">solve chinese messy code</div><div class="line">import json</div><div class="line">print json.dumps([&quot;中国&quot;, &quot;美国&quot;]).decode(&quot;unicode-escape&quot;)</div><div class="line">encode()方法：unicode编码转换成指定编码方式</div><div class="line">encode(&apos;utf-8&apos;), .encode(&apos;gb2312&apos;), .encode(&apos;gbk&apos;), .encode(&apos;gb18030&apos;)</div><div class="line">decode()方法：指定编码方式转换为unicode编码</div><div class="line">decode(&apos;utf-8&apos;), .decode(&apos;gb2312&apos;), .decode(&apos;gbk&apos;), .decode(&apos;gb18030&apos;)</div><div class="line">在Python中，unicode是中间编码</div><div class="line">编码A转换成编码B：string.decode(&quot;A&quot;).encode(&quot;B&quot;)</div><div class="line">mychar = chardet.detect(html)</div></pre></td></tr></table></figure>
+<p><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431664106267f12e9bef7ee14cf6a8776a479bdec9b9000" target="_blank" rel="external">http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431664106267f12e9bef7ee14cf6a8776a479bdec9b9000</a></p>
+<h2 id="％的用法"><a href="#％的用法" class="headerlink" title="％的用法"></a>％的用法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&apos;Hi, %s, you have $%d.&apos; % (&apos;Michael&apos;, 1000000)</div><div class="line">&apos;Hi, Michael, you have $1000000.&apos;</div></pre></td></tr></table></figure>
+<p>这里%d是整数%f是浮点数%s是字符串%x是十六进制证书<br>用%%来表示一个%</p>
+<h2 id="console-and-file-I-O-and-def"><a href="#console-and-file-I-O-and-def" class="headerlink" title="console and file I/O and def"></a>console and file I/O and def</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">name = input(&quot;What is your name? &quot;)</div></pre></td></tr></table></figure>
+<p>注意这样子生成的是str，如果要输入数字的话必须用int转换下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">f = open(filename, mode)</div><div class="line">f.close()</div><div class="line">f.read(size)f.readline() 读第一行</div><div class="line">f.readlines() </div><div class="line">for line in f:</div><div class="line">f.write(string)f.writelines(data)</div><div class="line">with open(&apos;file.txt&apos;, &apos;r&apos;) as f: </div><div class="line">    content = f.readlines()</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">if name ==&apos; main &apos;:    name = input(&quot;What is your name? &quot;)    greet(name)</div><div class="line"></div><div class="line">def greet():</div><div class="line">    xxx</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">try:</div><div class="line">    urllib.request.urlopen(&quot;https://www.youtube.com&quot;)</div><div class="line">except urllib.error.URLError as e:</div><div class="line">    print(e)</div></pre></td></tr></table></figure>
+<h2 id="各种基本元素使用"><a href="#各种基本元素使用" class="headerlink" title="各种基本元素使用"></a>各种基本元素使用</h2><h3 id="list"><a href="#list" class="headerlink" title="list"></a>list</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">class=[]</div><div class="line">增：class.append(j),class.insert(1,&apos;j&apos;)</div><div class="line">删：末尾class.pop()，其它del class[index] ,class.remove</div><div class="line">改：class[index]=j</div><div class="line">查：class.index(j)</div><div class="line">class.reverse()</div><div class="line">class.sorted() vs. class.sort()</div><div class="line">min(), max(), and sum() </div><div class="line">squares = [number**2 for number in range(1,11)]</div></pre></td></tr></table></figure>
+<p>另一种有序列表叫元组：tuple。tuple和list非常类似，但是tuple一旦初始化就不能修改,它也没有append()，insert()这样的方法。其他获取元素的方法和list是一样的，你可以正常地使用classmates[0]，classmates[-1]，但不能赋值成另外的元素。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">t = (&apos;a&apos;, &apos;b&apos;, [&apos;A&apos;, &apos;B&apos;])</div><div class="line">t[2][0] = &apos;X&apos;</div><div class="line">#tuple的元素确实变了，但其实变的不是tuple的元素，而是list的元素。tuple一开始指向的list并没有改成别的list，所以，tuple所谓的“不变”是说，tuple的每个元素，指向永远不变。</div></pre></td></tr></table></figure>
+<p>list是可变对象，在进行操作之后就会变化，但是像str这种操作之后原来的字符串不变<br><code>a.sort(),b=a.replace(&#39;a&#39;, &#39;A&#39;)</code>所以对于list进行不需要进行替换，但是字符这种必须变成b=a.replace，对于不变对象来说，a是一个变量，指向的内容是不变的‘abc’<br><a href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/00143167793538255adf33371774853a0ef943280573f4d000" target="_blank" rel="external">http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/00143167793538255adf33371774853a0ef943280573f4d000</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">for index, dog in enumerate(dogs):</div><div class="line">    place = str(index)</div><div class="line">    print(&quot;Place: &quot; + place + &quot; Dog: &quot; + dog.title())</div></pre></td></tr></table></figure>
+<h3 id="dic与set"><a href="#dic与set" class="headerlink" title="dic与set"></a>dic与set</h3><p>Python内置了字典：dict的支持，dict全称dictionary，在其他语言中也称为map，使用键-值（key-value）存储，具有极快的查找速度。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">x=&#123;&apos;Michael&apos;: 95&#125;</div><div class="line">增改：y=&#123;&apos;Bob&apos;: 75&#125; z=x.update(y); x[&apos;Bob&apos;]=75</div><div class="line">删：del x[&apos;Bob&apos;],x.pop(&apos;Bob&apos;)</div><div class="line">查：x.get(&apos;Thomas&apos;)</div><div class="line">for word, meaning in python_words.items():</div><div class="line">    print(&quot;\nWord: %s&quot; % word)</div><div class="line">for key in my_dict.keys():</div><div class="line">    print(&apos;Key: %s&apos; % key)</div><div class="line">for meaning in python_words.values():</div><div class="line">    print(&quot;\nMeaning: %s&quot; % meaning)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">s = set([1, 2, 3])</div><div class="line">s.add(4)</div><div class="line">s.remove(4)</div></pre></td></tr></table></figure>
+<h3 id="string操作"><a href="#string操作" class="headerlink" title="string操作"></a>string操作</h3><p>首先第一点要注意，特殊字符如‘，“这种需要加转义字符\才能正常显示<br>其次它的切片与list基本相同,但是方法不同</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">greeting.find(&apos;lo&apos;)</div><div class="line">greeting.replace(&apos;llo&apos;, &apos;y&apos;)</div><div class="line">greeting.startswith(&apos;Hell&apos;)</div><div class="line">greeting.isalpha() </div><div class="line">greeting.lower()</div><div class="line">greeting.title()</div><div class="line">greeting.strip()</div><div class="line">greeting.strip(&apos;! &apos;)</div><div class="line">&apos;ham cheese bacon&apos;.split()</div><div class="line">&apos;03-30-2016&apos;.split(sep=&apos;-&apos;)</div><div class="line">&apos;, &apos;.join([&apos;Eric&apos;, &apos;John&apos;, &apos;Michael&apos;]) </div><div class="line">dog_present = &apos;dog&apos; in message</div><div class="line">last_dog_index = message.rfind(&apos;dog&apos;)</div><div class="line">number_dogs = message.count(&apos;dog&apos;)</div><div class="line">dog_index = message.find(&apos;dog&apos;)</div><div class="line"></div><div class="line">&quot;\t&quot; -tab</div><div class="line">&quot;\n&quot; makes a newline</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/05/06/14940562457315/" data-id="cj2d4zjxv0000kis6bm5e2xht" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-描述性统计" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/04/06/描述性统计/" class="article-date">
@@ -136,7 +182,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/06/描述性统计/" data-id="cj1778zdh0000t5pfomgadq2u" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/04/06/描述性统计/" data-id="cj2d4lf0b0001ids6forr5frt" class="article-share-link">Share</a>
       
       
     </footer>
@@ -181,7 +227,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/06/机器学习/" data-id="cj1778zdv0001t5pfooe8exaa" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/04/06/机器学习/" data-id="cj2d4lf0k0003ids6eibad6oj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -207,7 +253,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/08/hah/" data-id="cj00m7pcb00001qpf8sfgdvev" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/08/hah/" data-id="cj2d4lf040000ids6r4ilexrg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -252,7 +298,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/09/hello-world/" data-id="cj00m7pcl00011qpfug5ps84l" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/09/hello-world/" data-id="cj2d4lf0h0002ids6hqqd0frz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -279,7 +325,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
     </div>
   </div>
 
@@ -290,6 +336,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/05/06/14940562457315/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2017/04/06/描述性统计/">(no title)</a>
